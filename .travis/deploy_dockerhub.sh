@@ -5,5 +5,5 @@ if [ "$TRAVIS_BRANCH" = "master" ]; then
 else
     TAG="$TRAVIS_BRANCH"
 fi
-docker build -f Dockerfile -t $TRAVIS_REPO_SLUG:$TAG .
-docker push saintograph/$TRAVIS_REPO_SLUG
+docker build -f Dockerfile -t saintograph/python-generator:$TAG .
+docker push saintograph/python-generator
